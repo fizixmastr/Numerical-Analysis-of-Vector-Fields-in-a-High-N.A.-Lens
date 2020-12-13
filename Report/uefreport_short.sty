@@ -1,0 +1,60 @@
+% Style file for short reports at UEF.
+%
+% Usage:
+% \documentclass[12pt,a4paper]{article}
+% \usepackage{uefreport_short}
+
+\NeedsTeXFormat{LaTeX2e}
+
+% Indent in the beginning of sections
+%\let\@afterindentfalse\@afterindenttrue
+%\@afterindenttrue
+
+\DeclareOldFontCommand{\sbseries}{\fontseries{sb}\selectfont}{\mathbf}
+\DeclareTextFontCommand{\textsb}{\sbseries}
+
+% Page layout
+%\pagestyle{empty}
+\addtolength{\hoffset}{-.45in}
+\setlength{\voffset}{-.2in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{2em}
+\addtolength{\textwidth}{1.1in}
+\setlength{\textheight}{10in}
+
+% Commands employed in the beginning
+\renewcommand{\title}[1]{\textbf{\huge #1}\\[10mm]}
+\newcommand{\authors}[1]{\textbf{\large #1}\\[2mm]}
+\newcommand{\email}[1]{\\[1mm] \textsb{email:} \texttt{#1}\\[5mm]}
+
+% Caption font size to approx. 10 pt & some style changes
+\makeatletter
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{{\bf \footnotesize #1:} #2}}%
+  \ifdim \wd\@tempboxa >\hsize
+    {{\bf \footnotesize #1:} #2\par}
+  \else
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+\makeatother
+%
+% Font commands
+\renewcommand{\baselinestretch}{.95}\normalsize
+%
+% Redefining the figure name
+\renewcommand{\figurename}{Fig}
+
+% New environment for the summary and frontmatter
+%\newenvironment{uefabstract}{\vspace{2cm}\begin{center}\textbf{Abstract}\end{center}\vspace*{-5mm}}{}
+\newcommand{\uefabstract}[1]{\vspace{4cm}\textbf{\large \abstractname\\}%
+  \vspace*{5mm}\begin{minipage}[h]{\textwidth} { #1}\end{minipage}}
+\newenvironment{frontmatter}{\pagestyle{empty}\vspace*{10mm}\begin{center}%
+  \setlength{\parskip}{0mm}\setlength{\parindent}{0mm}}%
+  {\end{center}\clearpage}
+
+\endinput
