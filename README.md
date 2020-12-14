@@ -6,4 +6,4 @@
 
   
   
-This was my first attempt at using the Python programming language which I have mostly taught myself using experience in other programming languages as well as YouTube and StackExchange. This repository has been created after the fact, and it will be continued to be updated as I grow to understand GitHub and Jupyter notebooks
+This was my first attempt at using the Python programming language which I have mostly taught myself using experience in other programming languages as well as YouTube and StackExchange. This repository has been created after the fact, and it will be continued to be updated as I grow to understand GitHub and Jupyter notebooks. The original code as well as a version that has been adapted for use in Jupyter notebook may be found here as well as the submitted report with its LaTex file.
