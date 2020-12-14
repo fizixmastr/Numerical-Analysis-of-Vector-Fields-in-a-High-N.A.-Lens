@@ -1,6 +1,9 @@
 # Numerical Analysis of Vector Fields in a High N.A. Lens
 
-<p style="text-align: center;">Centered text</p>
+<div align="center">
+
+# This is gonna be centered!
+</div>
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fizixmastr/Numerical-Analysis-of-Vector-Fields-in-a-High-N.A.-Lens/HEAD) [![image](https://img.shields.io/badge/Author-Charles%20Rambo-orange)](https://github.com/fizixmastr) [![image](https://img.shields.io/badge/-LinkedIn-grey?style=flat&logo=linkedin&labelColor=blue)](https://fi.linkedin.com/in/charles-rambo?trk=profile-badge)
 
