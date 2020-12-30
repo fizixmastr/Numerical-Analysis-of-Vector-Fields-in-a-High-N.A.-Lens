@@ -2,4 +2,4 @@ numpy
 scipy
 pandas
 matplotlib
-conda install quadpy
+!conda install quadpy
